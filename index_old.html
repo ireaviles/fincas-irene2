@@ -1,0 +1,140 @@
+﻿<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>COMUNYS</title>
+        <meta http-equiv="content-language" content="es-ES" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, height=device-height"/>
+        
+        <script type="text/javascript" src="js/fastclick.js"></script>
+        <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>   
+
+        <link rel="stylesheet" href="css/jquery.mobile-1.4.5.css" />
+        <link rel="stylesheet" href="css/comunys.css" />
+</head>
+<body>
+<div id="login" data-role="page" data-theme="b" class="click_bg">
+		
+        <div class="ui-content force_yellow" role="main"> 
+				<div style="margin:0px">
+                        <div id="image_ppal" align="center" style="margin-bottom:10px">
+                        <img src="images/logo_main.png" border="0" class="login_logo" />
+                        </div>
+                        
+                        <form id="form_login">
+                        	<input type="hidden" id="fAction" name="fAction" value="flogin" />
+
+                            <div class="ui-field-contain ui-hide-label">
+                            <label for="txtuser1" class="ui-hidden-accessible">Email</label>
+                            <input class="inpt" type="email" name="user" id="user" value="" placeholder="Email" style="padding-left:0px; margin-left:0px;" />
+                            </div>
+                            <div class="ui-field-contain ui-hide-label">
+                            <label for="txtpassword" class="ui-hidden-accessible">Contraseña</label>
+                            <input class="inpt" type="password" name="clave" id="clave" value="" placeholder="Contraseña" style="padding-left:0px; margin-left:0px;"  />
+                            </div>
+                            
+                            <div class="hide_submit">
+                            <input type="submit" onClick="click_login(); return false;" value="Entrar" class="hide_login">
+                            </div>
+                            
+                        </form>
+				</div>
+        </div>
+        
+        <div data-position="fixed" data-tap-toggle="false" data-role="footer" data-theme="b" class="force_yellow">
+        <div data-role="navbar">
+            <ul class="menu_inferior_yellow">         
+                <li>
+                <a class="menu_item" href="javascript:void(0);" id="btnLogin">
+                <span class="menu_icon"><span class="menu_icon_bg_w"><img src="images/ico_entrar.png" border="0" width="100%"></span></span>
+                <span class="menu_texto">Entrar</span>
+                </a>            
+                </li>
+            </ul>
+        </div>
+        </div>
+        
+</div>
+
+<div id="err_and_back" data-role="page" data-theme="b">
+        
+        <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="b">
+            	<div data-enhance="false">
+                
+                                <div class="hdr_main">
+                                        <div class="hdr_main_left">
+                                                <a href="javascript:void(0);" data-rel="back" data-role="none" class="top hdr_menu_panel"><img src="images/ico_back.png" /></a>
+                                                <a href="javascript:void(0);" data-rel="back" data-role="none" class="top logo_click"><img src="images/logo_click_palabra.png" border="0"></a>
+                                        </div>
+                                        <div class="hdr_main_right">
+                                                <!--<span class="hdr_right_title">ERROR</span>-->
+                                        </div>
+                                </div>
+
+                </div>
+        </div>          
+        
+        
+		<div class="ui-content" role="main"> 
+            <div align="center" style="margin-bottom:10px; margin-top:20px;">
+            <span id="err_back_title">Vaya, se ha producido un error<br /></span>
+            </div>
+            <div class="interior_page">           
+                <div id="err_back_msg" style="margin-bottom:20px; text-align:center">Por favor inténtalo de nuevo, gracias!</div>                
+                <div id="err_back_msg_red" style="margin-bottom:20px; text-align:center; color:#F00; font-size:80%"></div>                
+                <div style="text-align:right">
+                <a class="menu_item en_page" href="javascript:void(0);" data-rel="back">
+                <span class="menu_icon"><span class="menu_icon_bg"><img src="images/ico_ok.png" border="0" width="100%"></span></span>
+                </a>
+                </div>
+            </div>
+		</div>
+</div>
+
+
+
+
+<div id="ppal" data-role="page" data-theme="b">
+        
+            <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="b">
+                    <div data-enhance="false">
+                    
+                                    <div class="hdr_main">
+                                            <div class="hdr_main_left">
+                                                    <a href="#mypanel_menu" data-role="none" class="top hdr_menu_panel"><img src="images/Home.png" /></a>
+                                                    <a href="#mypanel_menu" data-role="none" class="top logo_click"><img src="images/logo_click_palabra.png" border="0"></a>
+                                            </div>
+                                            <div class="hdr_main_right">
+                                                    <span class="hdr_saldo" onclick="loadMonedas();">
+                                                        <span id="ppal_saldo"></span>
+                                                        <span id="saldo_simbl" class="active_coin"></span>
+                                                    </span>
+                                            </div>
+                                    </div>
+    
+                    </div>
+            </div>
+            
+
+            <div class="ui-content" role="main">   
+                    <ul id="listRoomH" data-role="listview" data-theme="b">
+                    <li>.</li>
+                    </ul>
+            </div>
+        
+</div>   
+
+
+
+
+                
+        
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/comunys_base.js"></script>
+<script type="text/javascript">app.initialize();</script>
+
+          
+</body>
+</html>
