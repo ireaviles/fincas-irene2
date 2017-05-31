@@ -113,6 +113,9 @@
 					<plugin name="cordova-plugin-whitelist-dev" spec="1.1.6" />
 					<allow-navigation href="*://*.comunys.es/*" />
 					<allow-navigation href="*://sardon.comunys.es/*" />
+					
+					<allow-navigation href="*://*.gabitelingenieros.com/*" />
+					<allow-navigation href="*://proyectos.gabitelingenieros.com/*" />
 
 				
 					<splash src="320x480.png" width="320" height="480" />

@@ -33,17 +33,29 @@ function consola_debug(txt){
 	}	
 }
 
-
+//Ire:Gabitel
+/*
 var def_url 		= "http://sardon.comunys.es";
 var app_url 		= "http://sardon.comunys.es/procms/login.pro?app=1";
 var login_sess		= "http://sardon.comunys.es/procms/app_checksess.pro";
 var login_index 	= "http://sardon.comunys.es/procms/index.pro";
+*/
+var def_url 		= "http://proyectos.gabitelingenieros.com/";
+var app_url 		= "hhttp://proyectos.gabitelingenieros.com/procms/Apps/ProyGabitel/1.0/";
+var login_sess		= "http://proyectos.gabitelingenieros.com/procms/app_checksess.pro";
+var login_index 	= "http://proyectos.gabitelingenieros.com/procms/index.pro";
 
 
 //var url_base		= "http://proyectos.gabitelingenieros.com/procms/Apps/ProyGabitel/1.0/";
+//Ire: Gabitel
+/*
 var url_base		= "http://sardon.comunys.es/procms/Apps/Fincas/1.5/";
 var login_url 		= "http://sardon.comunys.es/procms/app_login.pro";
 var login_sess		= "http://sardon.comunys.es/procms/app_checksess.pro";
+*/
+var url_base		= "http://proyectos.gabitelingenieros.com/procms/Apps/ProyGabitel/1.0/";
+var login_url 		= "http://proyectos.gabitelingenieros.com/procms/app_login.pro";
+var login_sess		= "http://proyectos.gabitelingenieros.com/procms/app_checksess.pro";
 
 /* =============================== */
 /* =============================== */
