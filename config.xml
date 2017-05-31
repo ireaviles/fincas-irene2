@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 
-	<widget id="com.comunys.sardon" version="1.51" xmlns="http://www.w3.org/ns/widgets" xmlns:gap = "http://phonegap.com/ns/1.0" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:android = "http://schemas.android.com/apk/res/android">
+	<widget id="com.comunys.sardon" version="1.51.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap = "http://phonegap.com/ns/1.0" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:android = "http://schemas.android.com/apk/res/android">
   	<name>Comunys</name>
     <description>Comunys - Administración de Fincas</description>
 	
@@ -113,7 +113,7 @@
 					<plugin name="cordova-plugin-whitelist-dev" spec="1.1.6" />
 					<allow-navigation href="*://*.comunys.es/*" />
 					<allow-navigation href="*://sardon.comunys.es/*" />
-					
+
 					<allow-navigation href="*://*.gabitelingenieros.com/*" />
 					<allow-navigation href="*://proyectos.gabitelingenieros.com/*" />
 
